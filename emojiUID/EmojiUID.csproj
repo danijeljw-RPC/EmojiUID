@@ -2,9 +2,18 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>EmojiUID</RootNamespace>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <AssemblyName>EmojiUID</AssemblyName>
   </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Resources\" />
+    <None Remove="Resources\v15\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+    <Folder Include="Resources\v15\" />
+  </ItemGroup>
 </Project>
